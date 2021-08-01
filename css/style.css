@@ -1,0 +1,28 @@
+.board {
+    width: 94vw;
+    height: 94vw;
+    max-width: 40vh;
+    max-height: 40vh;
+    font-family: Helvetica, sans-serif;
+    fill: #773403;
+    margin: min(3vw, 3vh) auto;
+}
+.board > svg {
+    width: 100%;
+    height: 100%;
+}
+.month {
+    font-size: 2rem;
+}
+.day {
+    font-size: 3rem;
+}
+.title {
+    font-size: 3rem;
+}
+.inspiration {
+    font-size: 1.5rem;
+}
+p {
+    text-align: center;
+}

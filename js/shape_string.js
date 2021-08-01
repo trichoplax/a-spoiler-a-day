@@ -1,0 +1,12 @@
+const shapeString = `
+#         #
+#   # # ### #### 
+### ### #   #    
+
+## ##   #     ##
+## ### #### ###
+##
+`
+
+export { shapeString }
+

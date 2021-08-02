@@ -65,7 +65,7 @@ const makeMove = stack => {
             }
         }
     }
-    
+
     frame.timeoutCanceller.timeoutID = setTimeout(makeMove, 0, stack)
 }
 

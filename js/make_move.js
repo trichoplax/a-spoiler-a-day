@@ -30,7 +30,7 @@ const nextPieceToTry = (remainingPieceIndices, { piece, orientation, placement }
 
 const makeMove = stack => {
     if (stack.length === 0) {
-        document.getElementById("solution_report").textContent = `${frame.solutionsFound.solutions} solutions found in total.`
+        document.getElementById("solution_report").textContent = `${document.getElementById("solution_report").textContent.slice(0, -7)}in total.`
         return
     }
 

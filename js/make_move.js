@@ -33,22 +33,22 @@ const makeMove = stack => {
         document.getElementById("solution_report").textContent = `${frame.solutionsFound.solutions} solutions found in total.`
         return
     }
-        
-    const frame = stack.pop()    
-    
+
+    const frame = stack.pop()
+
     if (frame.removePiece) {
         removeSvgPiece()
     } else {
         addPiece(frame)
         const nextPiece = nextPieceToTry(frame.remainingPieceIndices, frame.nextPiece)
-        
+
         if (nextPiece !== false) {
             stack.push({ ...frame, nextPiece })
         }
-        
+
         const timeoutCanceller = frame.timeoutCanceller
         stack.push({ timeoutCanceller, removePiece: true })
-        
+
         if (validMove(frame)) {
             const availableSquares = valueDifference(frame.availableSquares, usedSquares(frame))
             const remainingPieceIndices = frame.remainingPieceIndices.filter(value => value !== frame.nextPiece.piece)

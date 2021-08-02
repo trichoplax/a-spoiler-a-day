@@ -11,7 +11,7 @@ const squaresFromString = shapeString => {
             }
         }
     }
-    
+
     return squares
 }
 

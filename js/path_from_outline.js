@@ -2,7 +2,7 @@ import { north, east, south, west } from "./directions.js"
 
 const pathSegment = (edge, index, outline) => {
     const nextEdge = outline[(index * 1 + 1) % outline.length]
-    
+
     switch ("" + edge + nextEdge) {
         case "" + north + north: return "h 100 "
         case "" + north + east: return "h 80 a 10,10 0 0 1 10,10 "

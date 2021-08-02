@@ -44,9 +44,9 @@ const worthContinuing = (availableSquares, remainingPieceIndices) => {
     if (containsStraightFourWithoutSideBranches(availableSquares)) {
         return false
     }
-    
+
     const regions = connectedRegions(availableSquares)
-    
+
     return (
         !connectedRegionWithInvalidSize(regions, remainingPieceIndices)
         && !connectedRegionWithInvalidShape(regions, remainingPieceIndices)

@@ -40,7 +40,7 @@ const resetToEmptySvgBoard = () => {
         ),
         null
     )
-    
+
     concaveMask.insertBefore(
         svgElementMaker(
             "rect",
@@ -54,7 +54,7 @@ const resetToEmptySvgBoard = () => {
         ),
         null
     )
-    
+
     concaveMask.insertBefore(
         svgElementMaker(
             "circle",
@@ -67,7 +67,7 @@ const resetToEmptySvgBoard = () => {
         ),
         null
     )
-    
+
     const fullAreaMask = board.insertBefore(
         svgElementMaker(
             "mask",
@@ -75,7 +75,7 @@ const resetToEmptySvgBoard = () => {
         ),
         null
     )
-    
+
     fullAreaMask.insertBefore(
         svgElementMaker(
             "rect",
@@ -88,7 +88,7 @@ const resetToEmptySvgBoard = () => {
         ),
         null
     )
-    
+
     fullAreaMask.insertBefore(
         svgElementMaker(
             "rect",
@@ -102,7 +102,7 @@ const resetToEmptySvgBoard = () => {
         ),
         null
     )
-    
+
     fullAreaMask.insertBefore(
         svgElementMaker(
             "circle",
@@ -116,7 +116,7 @@ const resetToEmptySvgBoard = () => {
         ),
         null
     )
-    
+
     const playAreaMask = board.insertBefore(
         svgElementMaker(
             "mask",
@@ -124,7 +124,7 @@ const resetToEmptySvgBoard = () => {
         ),
         null
     )
-    
+
     playAreaMask.insertBefore(
         svgElementMaker(
             "rect",
@@ -141,7 +141,7 @@ const resetToEmptySvgBoard = () => {
         ),
         null
     )
-    
+
     playAreaMask.insertBefore(
         svgElementMaker(
             "rect",
@@ -158,7 +158,7 @@ const resetToEmptySvgBoard = () => {
         ),
         null
     )
-    
+
     playAreaMask.insertBefore(
         svgElementMaker(
             "rect",
@@ -175,12 +175,12 @@ const resetToEmptySvgBoard = () => {
         ),
         null
     )
-    
+
     const defs = board.insertBefore(
         svgElementMaker("defs", {}),
         null
     )
-    
+
     const fullBoard = defs.insertBefore(
         svgElementMaker(
             "g",
@@ -191,7 +191,7 @@ const resetToEmptySvgBoard = () => {
         ),
         null
     )
-    
+
     fullBoard.insertBefore(
         svgElementMaker(
             "rect",
@@ -204,7 +204,7 @@ const resetToEmptySvgBoard = () => {
         ),
         null
     )
-    
+
     const playBoard = defs.insertBefore(
         svgElementMaker(
             "g",
@@ -215,7 +215,7 @@ const resetToEmptySvgBoard = () => {
         ),
         null
     )
-    
+
     for (const properties of [
         { x: "0", y: "250", width: "750", height: "400", rx: "10", fill: "none", stroke: "#773403", "stroke-width": "3" },
         { x: "50", y: "50", width: "600", height: "700", rx: "10", fill: "none", stroke: "#773403", "stroke-width": "3" },
@@ -248,7 +248,7 @@ const resetToEmptySvgBoard = () => {
             null
         )
     }
-    
+
     board.insertBefore(
         svgElementMaker(
             "use",
@@ -256,7 +256,7 @@ const resetToEmptySvgBoard = () => {
         ),
         null
     )
-    
+
     board.insertBefore(
         svgElementMaker(
             "use",
@@ -264,7 +264,7 @@ const resetToEmptySvgBoard = () => {
         ),
         null
     )
-    
+
     for (const [properties, content] of [
         [{ x: "100", y: "100", class: "month" }, "Jan"],
         [{ x: "200", y: "100", class: "month" }, "Feb"],
@@ -324,8 +324,8 @@ const resetToEmptySvgBoard = () => {
             null
         ).textContent = content
     }
-    
-    
+
+
     // board.innerHTML = `
     //             <mask id="large-concave-south-west">
     //                 <rect x="680" y="180" width="40" height="40" fill="white" />
